@@ -1,0 +1,954 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playwrite+US+Trad:wght@100..400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 200px;
+    background: #f8f9fa;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #ddd;
+    padding-top: 20px;
+    transition: 0.3s ease;
+}
+
+.nav-icons {
+    width: 25px;
+}
+
+.nav {
+    margin-bottom: 10px !important;
+
+}
+
+.nav-link1 {
+    color: #0c3467;
+}
+
+.nav-item {
+    margin: 2% 0;
+}
+
+.nav-link svg {
+    width: 30px;
+}
+
+.nav-item a {
+    color: #3A3A3A !important;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-item a i {
+    color: #3A3A3A !important;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+.nav-item a:hover {
+    background: -webkit-linear-gradient(135deg, #338f9a 0%, #0c3467 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: linear-gradient(135deg, #338f9a 0%, #0c3467 100%);
+    color: transparent;
+    /* icon will also take gradient */
+
+}
+
+
+.my-drop-down {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    background: #f8f9fa !important;
+    margin: 0px;
+    transform: translate3d(179px, 52.4px, 0px) !important;
+}
+
+.Genre-dropdown {
+    position: relative;
+}
+
+.my-drop-down2 {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    background: #f8f9fa !important;
+    margin: 0px;
+    transform: translate3d(179px, 52.4px, 0px) !important;
+}
+
+.nav-item span {
+    display: block;
+}
+
+#hamburgerBtn.hide {
+    display: none !important;
+}
+
+#hamburgerBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+}
+
+#closeSidebar.hide {
+    display: none !important;
+}
+
+/* Close button inside sidebar */
+.close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    display: none;
+}
+
+.main-content {
+    margin-left: 200px;
+    padding: 30px;
+}
+
+.header-main {
+    padding-bottom: 0;
+}
+
+.header-logo {
+    margin-bottom: 50px !important;
+}
+
+.header-data h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.header-data p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+
+}
+
+.common-btn {
+    font-family: "inter";
+    font-weight: 600;
+    border-radius: 26px;
+    font-size: 1.1rem;
+    border: 2px solid #0c3467;
+    padding: 11px 16px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    color: #338F9A;
+
+}
+
+.common-btn:hover {
+    border: none;
+    transition: all 0.3s ease-in-out;
+    color: rgb(12, 52, 103) !important;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(12, 52, 103, 0.2);
+
+}
+
+
+.active-btn {
+    color: #fff;
+    margin-right: 20px !important;
+    background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%);
+    border: none;
+
+    transition: all 0.3s ease-in-out;
+
+}
+
+.active-btn:hover {
+    background: #fff;
+    color: rgb(12, 52, 103) !important;
+    transition: all 0.3s ease-in-out;
+    /* border: 2px solid #338F9A; */
+    box-shadow: 0 8px 20px rgba(12, 52, 103, 0.2);
+}
+
+
+.header-data {
+    margin: 50px 0;
+}
+
+
+
+.header-data h2 span {
+    font-family: "Playwrite US Trad", cursive;
+    color: #2E6E6D;
+
+}
+
+/* About Start */
+
+.about {
+    background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
+}
+
+.left-space {
+    margin-left: 140px !important;
+}
+
+.about-content {
+    padding: 0 20px;
+    padding-top: 50px;
+    font-family: "Montserrat";
+    color: #fff;
+}
+
+.about-right {
+    padding-bottom: 20px;
+}
+
+.about-right h5 {
+    font-size: 1.4rem;
+
+    font-weight: 300;
+}
+
+.about-right h2 {
+    font-size: 2.5rem;
+    font-family: "Montserrat";
+    font-weight: 800;
+}
+
+.about-right p {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.about-right button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+
+/* Expertise Start */
+.expertiese {
+    margin-top: 40px;
+
+}
+
+.expertise-right {
+    font-family: "Montserrat";
+
+}
+
+.expertise-right h5,
+.service h5 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #1A5379;
+}
+
+.expertise-right h2,
+.service h2 {
+    font-weight: 700;
+    font-size: 2.9rem;
+    color: #1D3755;
+}
+
+.expertise-right p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* Expertise End */
+
+/* Our service Start */
+.service {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.service p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Our service End */
+
+
+.service-box {
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    background: #fff;
+}
+
+.service-box img {
+    width: 55px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.service-box h2 {
+    font-weight: 600;
+    font-size: 1.15rem;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    color: #6c757d;
+    transition: all 0.3s ease-in-out;
+    font-size: 0.95rem;
+}
+
+/* Center box styling */
+.service-box:hover {
+    background: linear-gradient(135deg, #31b6b5, #0d2b6b);
+    color: white;
+    border-radius: 4px;
+    padding: 14px 6px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    scale: 1.08;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+
+}
+
+.service-box:hover p {
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+
+.center-box img {
+    filter: brightness(0) invert(1);
+}
+
+hr.custom-line {
+    border-top: 1px solid #dcdcdc;
+    margin: 30px 0;
+}
+
+.expertiese-btn {
+    text-align: center;
+}
+
+.expertiese-btn button {
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
+    border: none;
+}
+
+
+/* Arc Start */
+.Arcu {
+    background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
+    margin-top: 50px;
+    padding: 80px 0;
+}
+
+.Arcu-top h2 {
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+
+}
+
+.Arcu-top h2 span {
+    display: block;
+
+}
+
+.Arcu-top p {
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: #fff;
+}
+
+.Arcu-bottom-left p {
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: #fff;
+}
+
+
+.stat-card {
+    background: #F7F7F7;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: .3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card h4 {
+    color: #021B1F;
+    font-weight: 500 !important;
+    font-size: 1.4rem;
+    font-family: "Montserrat";
+}
+
+.stat-card p {
+    color: #8C8C8C;
+    font-size: 1rem;
+
+}
+
+.stat-icon {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #0d6efd;
+}
+
+/* Arc End */
+
+
+/* Portfilio Start */
+.Portfilio {
+    margin-top: 60px;
+}
+
+.portfilio_data h5 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #1A5379;
+}
+
+.portfilio_data h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: "Montserrat";
+    text-transform: capitalize;
+    color: #1D3755;
+    margin-bottom: 30px;
+
+}
+
+.portfilio_data p {
+    font-size: 1rem;
+    width: 60%;
+    margin: auto;
+    font-weight: 300;
+
+}
+
+.book-card {
+    perspective: 1200px;
+}
+
+.book-img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+    transform-origin: center bottom;
+}
+
+/* 3rd-book style hover rotation */
+.book-card:hover .book-img {
+    transform: rotate(-6deg) rotateX(12deg) scale(1.15);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.30);
+}
+
+.portfilio-button button {
+    color: #fff;
+    font-weight: 400;
+    padding: 10px 40px;
+    font-size: 1rem;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
+    border: none;
+}
+
+/* Portfilio End */
+
+/* Author Websites Start */
+#Author {
+    background-image: url("./asset/author-web-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.author-top {
+    margin-bottom: 50px;
+}
+
+.author-top h5 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #1A5379;
+}
+
+.author-top h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: "Montserrat";
+    text-transform: capitalize;
+    color: #1D3755;
+}
+
+.author-top p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+
+
+
+
+.feature-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
+}
+
+
+
+
+.feature-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.feature-text {
+    font-size: 0.8rem;
+    color: #5f6d7a;
+    margin: 0;
+}
+
+/* Author Websites End */
+
+/* Ghostwriting Services Start */
+.Ghostwriting {
+    background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
+    margin-bottom: 150px;
+}
+
+.Ghostwriting-container {
+    position: relative;
+}
+
+.Ghostwriting-data {
+    margin-top: 100px !important;
+margin-bottom: 60px;
+    color: #fff;
+}
+
+.Ghostwriting-data h2 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 20px !important;
+    font-family: "Montserrat";
+    margin: auto;
+}
+
+.Ghostwriting-data p {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 200;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.Ghostwriting-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.second-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.Ghostwriting-btn .second-btn:hover {
+    border: none;
+    transition: all 0.3s ease-in-out;
+    color: rgb(12, 52, 103) !important;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(12, 52, 103, 0.2);
+    cursor: pointer;
+}
+
+.Ghostwriting-book-img {
+    /* display: flex; */
+    bottom: 80px;
+    right: 0px;
+    position: absolute;
+    /* top: -60px; */
+}
+
+.counting-container {
+    background-color: #fff;
+    border-radius: 25px;
+    padding-top: 25px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+    width: 80% !important;
+    margin: auto;
+    position: relative;
+    bottom: -90px;
+}
+
+.counting-box {
+    padding: 20px 12px;
+}
+
+.count h2 {
+    color: #1A535C;
+    font-weight: 500;
+    font-size: 2.4rem;
+    font-family: "Outfit", sans-serif;
+}
+
+.count p {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/* Ghostwriting Services End */
+
+
+/* FAQ Start */
+.custom-blue {
+    color: #338F9A;
+    /* A common Bootstrap blue, adjust if a different shade is needed */
+}
+
+
+
+.faq-section h1 {
+    color: #1D3755;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.faq-section p {
+    color: #1D3755;
+    font-family: "inter";
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.accordion-header button {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1D3755;
+}
+
+.accordion-body p {
+    color: #1D3755;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: #e7f1ff;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #dee2e6;
+}
+
+.accordion-body {
+    color: #495057;
+}
+
+/* FAQ End */
+
+
+/* Testimonials Start  */
+
+/* Card Slider Start */
+.slider-heading h2 {
+    font-size: 2.4rem;
+    color: #1D3755;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.slider-heading p {
+    width: 80%;
+    font-size: 0.9rem;
+    color: #1D3755;
+    font-weight: 400;
+    margin-bottom: 50px;
+
+}
+
+.card.card-gradient {
+    border: none;
+}
+
+.swiper-slide .card-gradient img {
+    object-fit: cover;
+}
+
+.card {
+    width: 100%;
+    height: 100% !important;
+    position: relative;
+    border-color: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
+}
+
+.card-slide-main {
+    padding-bottom: 70px;
+}
+
+.card-slide-main .swiper-slide {
+    border: none !important;
+    background: transparent !important;
+}
+
+.card-gradient {
+    margin: 4px;
+    background: #fff;
+    position: relative;
+    border-radius: 48px;
+
+
+}
+
+.card-gradient::before {
+    content: "";
+    background: linear-gradient(45deg, rgba(12, 52, 103, 1) 0%, rgba(12, 51, 103, 1) 7%, rgba(19, 72, 130, 1) 15%, rgba(25, 90, 154, 0) 22%, rgba(41, 137, 216, 0) 40%, rgba(32, 124, 202, 0) 60%, rgba(39, 131, 185, 0) 73%, rgba(43, 135, 174, 1) 81%, rgba(51, 143, 154, 1) 96%, rgba(51, 143, 154, 1) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 48px;
+    z-index: 0;
+}
+
+
+.card-gradient .card-body {
+    padding: 20px 50px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    border-radius: 48px;
+    margin: 2px;
+}
+
+.card-gradient .card-body p:first-child {
+    font-size: 0.8rem;
+    color: #707070;
+    text-align: center;
+}
+
+.card-gradient .card-body p span:first-child {
+    margin-right: 10px;
+}
+
+.card-gradient .card-body p span:last-child {
+    margin-left: 10px;
+}
+
+
+
+.card-info {
+    position: absolute;
+
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+
+}
+
+
+.card-info p {
+    margin-top: 10px;
+    color: #222222 !important;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.card-info img {
+    width: 120px;
+}
+
+.review-slide {
+    /* margin: 80px 0; */
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* Card Slider End */
+/* Testimonials End */
+
+
+/* Contact Form Start */
+.contant-us-top {
+    border-top: 2px solid #E8E8E8;
+    padding-top: 100px;
+}
+
+.main-contact-us {
+    gap: 20px;
+}
+
+.form-left {
+    background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
+    padding: 40px 25px 0px 25px;
+}
+
+.form-right h5 {
+    color: #338F9A;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.form-right h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: "Montserrat";
+    color: #1D3755;
+    margin-bottom: 30px;
+}
+
+.form-right form {
+    margin-top: 10px;
+}
+
+.form-right p {
+    font-size: 0.9rem;
+    color: #1D3755;
+    margin-bottom: 30px;
+}
+
+.form-right label {
+    display: block;
+    margin-top: 30px;
+    color: #1D3755;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: "inter";
+}
+
+.form-right input {
+    color: #1D3755;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 20px 0px;
+    width: 100%;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.form-button {
+    margin-top: 40px;
+}
+
+/* Contact Form End */
+
+/* Footer Start */
+footer {
+    background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
+    color: #FFFFFF;
+    padding: 60px 0;
+}
+
+footer h5 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    font-family: "inter";
+}
+
+.footer-common li {
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: "inter";
+    margin: 10px 0;
+    list-style: none;
+
+}
+
+.footer-common li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: "inter";
+    font-weight: 300;
+
+}
+
+.Fourth-footer h6 {
+    margin-top: 30px;
+}
+
+.Fourth-footer span {
+    border-bottom: 1px solid #fff;
+
+}
+
+.Fourth-footer li {
+    margin: 0;
+
+}
+
+/* Footer End */
+
+/* Copy Right Start */
+.copy-right {
+    background: #fff;
+}
+
+.copy-right p {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-bottom: 0 !important;
+}
+
+/* Copy Right End */

@@ -1,0 +1,520 @@
+/* MOBILE: Sidebar Hidden */
+@media(max-width: 992px) {
+    #sidebar {
+        width: 50%;
+        left: -50%;
+    }
+
+    #sidebar.active {
+        left: 0;
+    }
+
+    .my-drop-down {
+        transform: translate3d(272px, 52.4px, 0px) !important;
+    }
+
+    .my-drop-down2 {
+        transform: translate3d(272px, 52.4px, 0px) !important;
+    }
+
+    #hamburgerBtn {
+        display: block !important;
+    }
+
+    .main-content {
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+
+    .close-btn {
+        display: block;
+    }
+
+    .header-data {
+        margin-top: 0 !important;
+    }
+
+    .left-space {
+        margin-left: 0px !important;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+    }
+
+    .service p {
+        width: 100%;
+    }
+
+    .Arcu {
+        padding-bottom: 0;
+    }
+
+    .Arcu-bottom {
+        text-align: center;
+    }
+
+    .Arcu-bottom-left {
+        width: 100% !important;
+    }
+
+    .Arcu-bottom-right {
+        width: 100% !important;
+    }
+
+
+    .Ghostwriting-data h2,
+    .Ghostwriting p {
+        width: 100%;
+    }
+
+    .Ghostwriting-book-img {
+        top: 0;
+        margin-top: 32px !important;
+    }
+
+    .counting-container {
+        bottom: -163px;
+    }
+
+    .slider-heading {
+        text-align: center;
+    }
+
+    .slider-heading p {
+        width: 100%;
+    }
+
+    .card-info img {
+        width: 30%;
+    }
+
+    .card-info p {
+        width: 70%;
+    }
+
+    .Portfilio {
+        padding: 60px 0;
+    }
+
+    .contant-us-top {
+        padding-top: 100px !important;
+    }
+
+    .form-left,
+    .form-right {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .form-button {
+        text-align: center;
+    }
+
+    .footer-data-main {
+        flex-wrap: wrap;
+    }
+
+    .footer-common {
+        width: 200px !important;
+    }
+
+    .first-footer {
+        width: 400px !important;
+    }
+
+    .review-slide {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .my-drop-down {
+        transform: translate3d(210px, 52.4px, 0px) !important;
+    }
+
+    .my-drop-down2 {
+        transform: translate3d(210px, 52.4px, 0px) !important;
+    }
+
+    .header-data h2 {
+        font-size: 2rem;
+    }
+
+    .header-data p {
+        font-size: 1rem;
+    }
+
+    .about-right h5 {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .active-btn {
+        margin-right: 8px !important;
+    }
+
+    .header-button button {
+        font-size: 1.1rem;
+        padding: 9px 18px;
+    }
+
+    .about-right h2 {
+        font-size: 2rem;
+        font-family: "Montserrat";
+        font-weight: 800;
+    }
+
+    .expertise-right {
+        text-align: center;
+    }
+
+    .service-box {
+        /* margin-bottom: 50px; */
+    }
+
+    .expertise-right h2,
+    .service h2 {
+        font-size: 2.2rem;
+    }
+
+    .expertise-right h5,
+    .service h5 {
+        font-size: 1.1rem;
+    }
+
+    .stat-card span {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .counting-container {
+        bottom: -83px;
+    }
+
+
+
+    .count h2 {
+        font-size: 1.9rem;
+    }
+
+    .count p {
+        font-weight: 300;
+        font-size: 0.8rem;
+    }
+
+    .Ghostwriting-book-img {
+        justify-content: center;
+    }
+
+    .Ghostwriting-data {
+        margin-top: 70px !important;
+    }
+
+    .counting-box {
+        padding: 0px 12px;
+    }
+
+    .contant-us-top {
+        padding-top: 50px !important;
+    }
+
+    .form-right h2 {
+        font-size: 2.2rem;
+    }
+
+    .form-right h5 {
+        font-size: 1.2rem;
+    }
+
+    .form-right label {
+        font-size: 1.1rem;
+    }
+
+    .form-right input {
+        font-size: 1.1rem;
+    }
+
+    .copy-right p {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 526px) {
+    .my-drop-down {
+        transform: translate3d(140px, 52.4px, 0px) !important;
+    }
+
+    .my-drop-down2 {
+        transform: translate3d(140px, 52.4px, 0px) !important;
+    }
+
+    .header-data h2 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .header-data p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .header-button {
+        text-align: center;
+    }
+
+
+    .common-btn {
+        font-size: 1rem;
+        padding: 10px 14px;
+    }
+
+    .about-content {
+        padding-top: 40px;
+    }
+
+    .about-right {
+        text-align: center;
+    }
+
+    .about-right h5 {
+        font-size: 1rem;
+    }
+
+    .about-right h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-right p {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+
+    .about-right button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .expertise-right h5,
+    .service h5 {
+        font-size: 1rem;
+    }
+
+    .expertise-right h2,
+    .service h2 {
+        font-size: 2rem;
+    }
+
+    .expertise-right p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .service {
+        margin-top: 80px;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .services-data-main {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .service-box-margin {
+        margin-bottom: 30px !important;
+    }
+
+    .expertiese-btn button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .Arcu {
+
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .Arcu-top h2 {
+        font-size: 1.8rem;
+    }
+
+    .Arcu-top p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .stat-card h4 {
+        font-size: 1.5rem;
+    }
+
+    .stat-card p {
+        font-size: 0.9rem;
+    }
+
+    .author-top h5 {
+        font-size: 1rem;
+    }
+
+    .portfilio-button button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .author-top h2 {
+        font-size: 1.8rem;
+    }
+
+    .feature-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .author-top p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .feature-text {
+        line-height: 1.4rem;
+    }
+
+    .Ghostwriting-data h2 {
+        font-size: 1.8rem;
+    }
+
+    .Ghostwriting-data p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+
+ 
+
+    .count h2 {
+        font-size: 1.5rem;
+    }
+
+    .count p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .faq-section p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        text-align: center;
+    }
+
+    .faq-section h1 {
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+        text-align: center;
+
+    }
+
+    .slider-heading h2 {
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+        margin-bottom: 20px;
+    }
+
+    .slider-heading p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+    .card-gradient .card-body p:first-child {
+        font-size: 0.8rem;
+        color: #707070;
+        text-align: center;
+    }
+
+    .card-info {
+        bottom: -85px;
+    }
+
+    .card-info p {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+
+
+    .card-info img {
+        width: 150px;
+        padding-right: 0;
+    }
+
+    .card-info p {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        width: 50%;
+        padding: 0 0 20px 0;
+    }
+
+    .review-slide {
+        margin-bottom: 50px;
+    }
+
+    .form-right h5 {
+        font-size: 1.1rem;
+    }
+
+    .form-right h2 {
+        font-size: 1.8rem;
+    }
+
+    .form-right {
+        text-align: center;
+    }
+
+    form {
+        text-align: left;
+    }
+
+    .form-right p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+    .form-right label {
+        font-size: 1rem;
+    }
+
+    .form-right input {
+        font-size: 1rem;
+    }
+
+    .form-right button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .copy-right p {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 370px) {
+    .header-button {
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .active-btn {
+        padding: 10px 14px;
+    }
+
+    .common-btn {
+        font-size: 1rem;
+        padding: 8px 14px;
+    }
+
+}
