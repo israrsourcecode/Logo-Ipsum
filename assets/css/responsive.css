@@ -1,7 +1,7 @@
 /* MOBILE: Sidebar Hidden */
 @media(max-width: 992px) {
     #sidebar {
-        width: 50%;
+        width: 10%;
         left: -50%;
     }
 
@@ -9,22 +9,31 @@
         left: 0;
     }
 
-    .my-drop-down {
-        transform: translate3d(272px, 52.4px, 0px) !important;
-    }
 
-    .my-drop-down2 {
-        transform: translate3d(272px, 52.4px, 0px) !important;
-    }
 
     #hamburgerBtn {
         display: block !important;
     }
 
-    .main-content {
+    .header-main {
+        margin-top: 15px;
+    }
+
+    .header-data {
+        text-align: center;
+        margin-right: 28px;
+        margin-left: 28px;
+    }
+
+    .header-logo {
+        margin-bottom: 60px;
+        /* margin-left: 15px; */
+
+        text-align: left;
+    }
+
+    .main {
         margin: 0;
-        margin-top: 10px;
-        padding: 0;
     }
 
 
@@ -42,10 +51,36 @@
 
     .about-content {
         flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-right {
+        margin-bottom: 60px;
     }
 
     .service p {
         width: 100%;
+    }
+
+    .services-first-box {
+        /* border-bottom:none; */
+        border-right: 1px solid;
+    }
+
+    /* Add left & right border ONLY to 2nd box in top row */
+    .service-box-top .row>div:nth-child(2) {
+        border: none;
+        border-bottom: 1px solid;
+    }
+
+    .service-box-top .row>div:nth-child(4) {
+        border-bottom: 1px solid;
+    }
+
+    .service-box-top .row>div:nth-child(5) {
+        border: none;
+        border-right: 1px solid;
+
     }
 
     .Arcu {
@@ -64,16 +99,15 @@
         width: 100% !important;
     }
 
+    .Ghostwriting {
+        margin-bottom: 212px;
+    }
 
     .Ghostwriting-data h2,
     .Ghostwriting p {
         width: 100%;
     }
 
-    .Ghostwriting-book-img {
-        top: 0;
-        margin-top: 32px !important;
-    }
 
     .counting-container {
         bottom: -163px;
@@ -97,6 +131,15 @@
 
     .Portfilio {
         padding: 60px 0;
+    }
+
+    .form-right {
+        text-align: center;
+    }
+
+    .form-right label,
+    .form-right input {
+        text-align: left;
     }
 
     .contant-us-top {
@@ -128,15 +171,23 @@
     .review-slide {
         width: 100%;
     }
-}
 
-@media(max-width: 768px) {
-    .my-drop-down {
-        transform: translate3d(210px, 52.4px, 0px) !important;
+
+
+    /* ABOUT PAGE START */
+    .experience-header {
+        text-align: center;
     }
 
-    .my-drop-down2 {
-        transform: translate3d(210px, 52.4px, 0px) !important;
+    /* ABOUT PAGE END */
+}
+
+@media(max-width: 767px) {
+
+
+    .header-company {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .header-data h2 {
@@ -161,23 +212,47 @@
         padding: 9px 18px;
     }
 
+    @keyframes heroImage {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-30px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+
+    .about-right {
+        text-align: center;
+    }
+
     .about-right h2 {
         font-size: 2rem;
         font-family: "Montserrat";
         font-weight: 800;
     }
 
+    .about-page-about-left {
+        padding-bottom: 380px;
+    }
+
     .expertise-right {
         text-align: center;
     }
 
-    .service-box {
-        /* margin-bottom: 50px; */
+
+    .expertise-right h2 {
+        font-size: 2rem;
     }
 
-    .expertise-right h2,
-    .service h2 {
-        font-size: 2.2rem;
+
+    .service-box h2 {
+        font-size: 1rem;
     }
 
     .expertise-right h5,
@@ -185,9 +260,76 @@
         font-size: 1.1rem;
     }
 
+    .service-box p {
+        padding: 0;
+        font-size: 0.9rem;
+
+    }
+
+    .service-box-top,
+    .service-box-bottom,
+    .service-box-top .service-box,
+    .service-box-bottom .service-box {
+        border: none;
+    }
+
+    .service-box-margin {
+
+        border-bottom: 1px solid #000 !important;
+    }
+
+    .services-first-box {
+        /* border-bottom: none; */
+        border-right: none;
+    }
+
+    /* Add left & right border ONLY to 2nd box in top row */
+    .service-box-top .row>div:nth-child(2) {
+        border: none;
+        border-bottom: 1px solid;
+    }
+
+    .service-box-top .row>div:nth-child(4) {
+        border-bottom: none;
+
+
+    }
+
+    .service-box-top .row>div:nth-child(5) {
+        border: none;
+        border-right: none;
+
+    }
+
+    .service-box-top .row>div:nth-child(6) {
+        border: none;
+        border-right: none;
+        border-bottom: none !important;
+    }
+
     .stat-card span {
         width: 100%;
         justify-content: center;
+    }
+
+    .Arcu-top {
+        text-align: center;
+    }
+
+    .portfilio_data p {
+        width: 100%;
+    }
+
+    .Ghostwriting {
+        margin-bottom: 130px;
+    }
+
+    .Ghostwriting-data h2 {
+        font-size: 2rem;
+    }
+
+    .service h2 {
+        font-size: 2rem;
     }
 
     .counting-container {
@@ -207,10 +349,24 @@
 
     .Ghostwriting-book-img {
         justify-content: center;
+        display: flex;
+        position: unset;
     }
 
     .Ghostwriting-data {
         margin-top: 70px !important;
+    }
+
+    .faq-section-top-data {
+        text-align: center;
+    }
+
+    .faq-section-top-data h1 {
+        font-size: 2rem;
+    }
+
+    .slider-heading h2 {
+        font-size: 2rem;
     }
 
     .counting-box {
@@ -222,7 +378,7 @@
     }
 
     .form-right h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .form-right h5 {
@@ -240,16 +396,36 @@
     .copy-right p {
         font-size: 0.9rem;
     }
+
+    /* ABOUT PAGE START */
+    .experience-bottom-year {
+
+        padding: 40px 20px;
+    }
+
+    .experience-header h2 {
+        font-size: 2rem;
+    }
+
+    .experience-header h2 {
+        font-family: "Montserrat";
+        font-size: 2rem;
+        color: #02121D;
+        font-weight: 500;
+        line-height: 44px;
+    }
+
+    .We-Give-Heading h2 {
+        font-size: 2rem;
+        font-family: "Montserrat";
+        font-weight: 500;
+    }
+
+    /* ABOUT PAGE END */
 }
 
 @media(max-width: 526px) {
-    .my-drop-down {
-        transform: translate3d(140px, 52.4px, 0px) !important;
-    }
 
-    .my-drop-down2 {
-        transform: translate3d(140px, 52.4px, 0px) !important;
-    }
 
     .header-data h2 {
         text-align: center;
@@ -297,14 +473,21 @@
         padding: 8px 16px;
     }
 
+    .about-page-about-left {
+        padding-bottom: 320px;
+    }
+
     .expertise-right h5,
     .service h5 {
         font-size: 1rem;
     }
 
-    .expertise-right h2,
     .service h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .expertise-right h2 {
+        font-size: 1.8rem;
     }
 
     .expertise-right p {
@@ -313,12 +496,14 @@
     }
 
     .service {
-        margin-top: 80px;
         font-size: 0.9rem;
         line-height: 1.5rem;
     }
-
-    .services-data-main {
+.expertiese-btn {
+    text-align: center;
+    margin-top: 0px;
+}
+    .service-box-main {
         padding-top: 10px !important;
         padding-bottom: 10px !important;
     }
@@ -334,7 +519,7 @@
 
     .Arcu {
 
-        padding: 60px 0;
+        padding-top: 60px;
         text-align: center;
     }
 
@@ -359,9 +544,18 @@
         font-size: 1rem;
     }
 
+    .Portfilio {
+        margin: 0;
+    }
+
     .portfilio-button button {
         font-size: 1rem;
         padding: 8px 16px;
+    }
+
+    #Author {
+        padding-top: 20px;
+        padding-bottom: 60px;
     }
 
     .author-top h2 {
@@ -392,7 +586,7 @@
     }
 
 
- 
+
 
     .count h2 {
         font-size: 1.5rem;
@@ -493,9 +687,31 @@
         padding: 8px 16px;
     }
 
+    footer h5 {
+        margin-top: 0;
+    }
+
     .copy-right p {
         font-size: 0.8rem;
     }
+
+    /* ABOUT PAGE START  */
+    .experience-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .We-Give {
+        margin: 60px 0;
+        padding: 0 10px;
+    }
+
+    .We-Give-Heading h2 {
+        font-size: 1.8rem;
+        font-family: "Montserrat";
+        font-weight: 500;
+    }
+
+    /* ABOUT PAGE END  */
 }
 
 @media(max-width: 370px) {
@@ -510,6 +726,7 @@
 
     .active-btn {
         padding: 10px 14px;
+        margin-right: 0 !important;
     }
 
     .common-btn {
@@ -517,4 +734,7 @@
         padding: 8px 14px;
     }
 
+    .about-page-about-left {
+        padding-bottom: 210px;
+    }
 }
