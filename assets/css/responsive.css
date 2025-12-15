@@ -422,6 +422,15 @@
     }
 
     /* ABOUT PAGE END */
+
+    /* CONTACT PAGE START */
+    .speak-us-box {
+        text-align: center;
+    }
+    .speak-box-right{
+        margin-top: 20px;
+    }
+    /* CONTACT PAGE END */
 }
 
 @media(max-width: 526px) {

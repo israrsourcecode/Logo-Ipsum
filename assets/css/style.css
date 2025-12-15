@@ -1215,6 +1215,148 @@
 }
 
 /* ABOUT PAGE END */
+
+
+/* CONTACT US PAGE START */
+
+/* Speak With Us Start  */
+.speak-us {
+    background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
+    /* background-size: 100% 60%; */
+    border: 1px solid #ffffff00;
+    /* border: none; */
+    margin-bottom: 80px;
+}
+
+.speak-us h2 {
+    font-size: 2.4rem;
+    font-family: "Montserrat";
+    color: #ffff;
+    font-weight: 500;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.speak-us-box-main {
+    margin-bottom: -50px;
+}
+
+.speak-us-box {
+    background: #FFFFFF;
+    box-shadow: 0px 5.20497px 69.3996px rgba(0, 0, 0, 0.2);
+    border-radius: 13.8799px;
+    /* margin-top: 50px; */
+    padding: 20px 10px;
+    height: 100%;
+}
+
+.speak-box-left-cricle {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background: #338f9a;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.7);
+        box-shadow: 0 0 0 0 rgba(51, 143, 154, 0.6);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(51, 143, 154, 0);
+    }
+
+    100% {
+        transform: scale(0.7);
+        box-shadow: 0 0 0 0 rgba(51, 143, 154, 0);
+    }
+}
+
+
+.speak-box-right p,
+.speak-box-right h4 {
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+.speak-box-right h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1D3755;
+}
+
+.speak-box-right p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 2px;
+    color: #1D3755;
+}
+
+/* Speak With Us End  */
+
+/* CONTACT US PAGE END */
+
+
+/* PRIVACY PAGE START */
+.privacy-hero {
+    background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
+    padding: 120px 0;
+}
+
+.privacy-hero-data {
+    color: #FFFFFF;
+}
+
+.privacy-hero-data h1 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.privacy-hero-data p {
+    font-family: "Montserrat";
+    font-size: 1rem;
+}
+
+/* <!-- PRIVACY DATA START --> */
+.privacy-data {
+    margin: 60px 0;
+    color: #000000;
+
+}
+
+.privacy-data h2 {
+    margin: 20px 0;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+
+.privacy-data p,
+.privacy-data li {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.privacy-data h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+/* <!-- PRIVACY DATA END --> */
+
+
+/* PRIVACY PAGE END */
+
 /* Footer Start */
 footer {
     background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
