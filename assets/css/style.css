@@ -69,6 +69,17 @@
 
 }
 
+/* Show dropdown on hover */
+.nav-item.dropdown:hover > .dropdown-menu,
+.nav-item.Genre-dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+/* Optional: smooth animation */
+.dropdown-menu {
+    transition: all 0.3s ease-in-out;
+}
 
 .my-drop-down, .my-drop-down2 {
     position: absolute;
@@ -1357,6 +1368,100 @@
 
 /* PRIVACY PAGE END */
 
+/* BLOG PAGE START */
+.blog-hero-data {
+    color: #1D3755;
+    margin-top: 70px;
+}
+
+.blog-hero-data h1 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.blog-hero-data p {
+    font-family: "Montserrat";
+    font-size: 1rem;
+}
+
+.blog-hero-card-main {
+    border: 1px solid #CECECE;
+    margin-top: 40px;
+    padding: 30px;
+    margin-bottom: 70px;
+}
+
+.blog-hero-card-data h3 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #121212;
+}
+
+.blog-hero-card-data p {
+    font-size: 1rem;
+    font-family: "Montserrat";
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #727272;
+}
+
+.blog-hero-card-date span {
+    font-size: 1rem;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.blog-hero-card-btn {
+    margin-top: 30px;
+}
+
+/* Blog Card Start */
+.blog-card-container{
+    margin-bottom: 40px;
+
+}
+.blog-card a{
+    text-decoration: none;
+}
+.blog-card {
+    border: 1px solid #CECECE;
+    padding: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transform: scale(0.9);
+}
+.blog-card:hover {
+   transform: scale(1.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.blog-card-data i{
+    color: #FDCF55;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+.blog-card-data {
+    font-size: 1rem;
+    font-family: "Montserrat";
+    margin-top: 10px;
+    color: #000000;
+}
+.blog-card-data p{
+    color: #000000;
+    font-size: 1rem;
+    font-family: "Inter";
+    margin-top: 8px;
+
+}
+
+/* Blog Card End */
+/* BLOG PAGE END */
+
 /* Footer Start */
 footer {
     background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
@@ -1419,3 +1524,5 @@ footer h5 {
 }
 
 /* Copy Right End */
+
+
