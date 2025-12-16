@@ -195,6 +195,47 @@
     }
 
     /* BLOG PAGE END */
+    /* FICTION PAGE START */
+    .licensed-writer {
+        text-align: center;
+    }
+
+    .licensed-writer-data-check {
+        text-align: left;
+    }
+
+    .licensed-writer-card-number {
+        display: flex;
+        justify-content: center;
+    }
+
+    .we-offer-box-main {
+        margin-top: 0px;
+    }
+
+    .we-offer {
+        padding-top: 60px;
+    }
+
+    .we-offer-bottom {
+        margin-top: 20px;
+    }
+
+    .professional-writer-bottom>.row {
+        flex-direction: column-reverse;
+    }
+
+  
+
+    .professional-writter-left-data h3 {
+        font-size: 1.2rem;
+    }
+
+    .professional-writter-left-data p {
+        font-size: 0.9rem;
+    }
+
+    /* FICTION PAGE END */
 }
 
 @media(max-width: 767px) {
@@ -448,6 +489,40 @@
     }
 
     /* CONTACT PAGE END */
+
+    /* FICTION PAGE START */
+    .licensed-writer-heading h2 {
+        font-size: 2rem;
+    }
+
+    .we-offer-header-heading h2 {
+        font-size: 2rem;
+    }
+
+    .we-offer-box {
+        text-align: center;
+    }
+
+    .we-offer-bottom {
+        margin-top: 28px;
+    }
+
+    .we-offer-box h3 {
+        font-size: 1.1rem;
+    }
+
+    .we-offer-box p {
+        font-size: 0.9rem;
+    }
+
+    .we-offer-header-para p {
+        font-size: 0.9rem;
+    }
+
+
+    /* FICTION PAGE END */
+
+
 }
 
 @media(max-width: 526px) {
@@ -744,21 +819,59 @@
     .blog-hero-data h1 {
         font-size: 2rem;
     }
+
     .blog-hero-data p {
-    font-size: 0.9rem;
-}
+        font-size: 0.9rem;
+    }
 
     .blog-hero-card-data h3 {
         font-size: 1.3rem;
     }
-.blog-hero-card-data p {
-    font-size: 0.9rem;
-}
-.blog-hero-card-date span {
-    font-size: 0.9rem;
-}
+
+    .blog-hero-card-data p {
+        font-size: 0.9rem;
+    }
+
+    .blog-hero-card-date span {
+        font-size: 0.9rem;
+    }
+
     /* BLOG PAGE END */
+
+    /* FICTION PAGE START */
+    .licensed-writer-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .licensed-writer-data {
+        margin-top: 16px;
+    }
+
+    .licensed-writer-data-check p span {
+        margin-right: 5px;
+    }
+
+    .licensed-writer-data p {
+        font-size: 0.9rem;
+    }
+
+    .we-offer-header-heading h2 {
+        font-size: 1.8rem;
+    }
+  .professional-writter-left .row {
+        /* flex-direction: column; */
+        text-align: center;
+        /* padding: 6px 8px; */
+    }
+    .professional-writter-left .padding-remove {
+        padding: 0 !important;
+    }
+    /* FICTION PAGE END */
+
 }
+
+
+
 
 @media(max-width: 370px) {
     .header-button {

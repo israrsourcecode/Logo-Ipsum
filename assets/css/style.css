@@ -69,12 +69,7 @@
 
 }
 
-/* Show dropdown on hover */
-.nav-item.dropdown:hover > .dropdown-menu,
-.nav-item.Genre-dropdown:hover > .dropdown-menu {
-    display: block;
-    margin-top: 0;
-}
+
 
 /* Optional: smooth animation */
 .dropdown-menu {
@@ -1421,13 +1416,15 @@
 }
 
 /* Blog Card Start */
-.blog-card-container{
+.blog-card-container {
     margin-bottom: 40px;
 
 }
-.blog-card a{
+
+.blog-card a {
     text-decoration: none;
 }
+
 .blog-card {
     border: 1px solid #CECECE;
     padding: 14px;
@@ -1436,22 +1433,26 @@
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     transform: scale(0.9);
 }
+
 .blog-card:hover {
-   transform: scale(1.1);
+    transform: scale(1.1);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.blog-card-data i{
+
+.blog-card-data i {
     color: #FDCF55;
     font-size: 1.2rem;
     margin-right: 5px;
 }
+
 .blog-card-data {
     font-size: 1rem;
     font-family: "Montserrat";
     margin-top: 10px;
     color: #000000;
 }
-.blog-card-data p{
+
+.blog-card-data p {
     color: #000000;
     font-size: 1rem;
     font-family: "Inter";
@@ -1462,6 +1463,258 @@
 /* Blog Card End */
 /* BLOG PAGE END */
 
+/* FICTION PAGE START */
+/* Licensed Writer START Start */
+.licensed-writer {
+    margin: 80px 0;
+}
+
+.licensed-writer-heading h2 {
+    font-size: 2.4rem;
+    color: #12416F;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+.licensed-writer-data {
+    margin-top: 36px;
+}
+
+.licensed-writer-data p {
+    font-size: 1rem;
+    color: #747474;
+    font-family: "Inter";
+    margin-bottom: 0;
+}
+
+.licensed-writer-data-check {
+    margin-top: 26px;
+}
+
+.licensed-writer-data-check p {
+    font-size: 1rem;
+    color: #747474;
+    font-family: "Inter";
+    margin-bottom: 6px;
+}
+
+.licensed-writer-data-check p span {
+    color: #27738B;
+    margin-right: 14px;
+    font-size: 1.2rem;
+}
+
+.licensed-writer-card-main {
+    margin-top: 60px;
+}
+
+.licensed-writer-card {
+    padding: 0 10px;
+}
+
+.licensed-writer-card-number p {
+    background: rgb(48, 135, 150, 20%);
+    color: #05171D !important;
+    font-weight: 600 !important;
+    font-family: "Montserrat" !important;
+    font-size: 1.4rem !important;
+    padding: 16px 20px;
+    border-radius: 35px !important;
+
+
+}
+
+.licensed-writer-card h3 {
+    font-weight: 600;
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+}
+
+.licensed-writer-card p {
+    color: #747474;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Inter";
+}
+
+.licensed-writer-btn {
+    margin-top: 40px;
+}
+
+.licensed-writer-card-number {
+    display: flex;
+    justify-content: left;
+}
+
+/* Licensed Writer End Start */
+
+/* We Offer Section Start */
+.we-offer {
+    background: linear-gradient(105.88deg, #338F9A 9.89%, #0C3467 89.9%);
+    padding-top: 80px;
+}
+
+.we-offer-header-heading h2 {
+    font-size: 2.6rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.we-offer-header-para p {
+    font-size: 1rem;
+    font-family: "Inter";
+    color: #FFFFFF;
+
+}
+
+.we-offer-bottom {
+    margin-top: 50px;
+}
+
+.we-offer-box {
+    background: #FFFFFF;
+    border: 0.91404px solid #D8D8D8;
+    border-radius: 7.31232px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.we-offer-box:hover {
+    /* transform: translateY(-10px); */
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.we-offer-box h3 {
+    font-size: 1.3rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #2F2F2F;
+}
+
+.we-offer-box p {
+    font-size: 1rem;
+    font-family: "Inter";
+    color: #363636;
+    margin-bottom: 0;
+}
+
+.we-offer-box-main {
+    margin-top: 30px;
+}
+
+.we-offer-img {
+    display: flex;
+    align-items: end;
+    height: 100%;
+}
+
+/* We Offer Section End */
+/* Professional Writer Section Start */
+.professional-writer {
+    margin: 70px 0;
+}
+
+.professional-writer-header {
+    margin-bottom: 40px;
+}
+
+.professional-writer-header span {
+    color: #1A5379;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.professional-writer-header h2 {
+    color: #1D3755;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.professional-writer-header p {
+    color: #1D3755;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.professional-writter-left {
+    margin-bottom: 20px;
+    padding: 14px 16px;
+    background: rgba(230, 236, 236, 0.55);
+    border: 0.958269px solid rgba(140, 140, 140, 0.3);
+    border-radius: 7.66615px;
+
+}
+
+.professional-writter-left-data h3 {
+    font-size: 1.3rem;
+    color: #27213C;
+    font-weight: 500;
+    font-family: "Montserrat";
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.professional-writter-left-data p {
+    margin: 0;
+    font-size: 1rem;
+    font-family: "Inter";
+    margin-top: 4px;
+    color: #8C8C8C;
+}
+
+.professional-writter-left-number {
+    /* margin-left: 6px; */
+    /* float: right; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.professional-writter-left-number p {
+    background: linear-gradient(105.88deg, #338F9A 9.89%, #0C3467 89.9%);
+    color: #fff;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 18px 21px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: inline-block;
+    animation: blink 1.8s infinite ease-in-out;
+}
+
+@keyframes blink {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
+
+/* Professional Writer Section End */
+/* FICTION PAGE END */
 /* Footer Start */
 footer {
     background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
@@ -1524,5 +1777,3 @@ footer h5 {
 }
 
 /* Copy Right End */
-
-

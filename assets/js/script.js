@@ -1,16 +1,3 @@
-document.querySelectorAll('.dropdown').forEach(function (dropdown) {
-    dropdown.addEventListener('mouseenter', function () {
-        if (window.innerWidth > 992) {
-            this.querySelector('.dropdown-menu').classList.add('show');
-        }
-    });
-
-    dropdown.addEventListener('mouseleave', function () {
-        if (window.innerWidth > 992) {
-            this.querySelector('.dropdown-menu').classList.remove('show');
-        }
-    });
-});
 
 
 
