@@ -127,7 +127,10 @@
 }
 
 .header-main {
-    margin-top: 60px;
+    margin-top: 60px; 
+}
+.header-home-right{
+      overflow: hidden;
 }
 
 .header-logo {
@@ -251,6 +254,7 @@
 /* about section start */
 .about {
     background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
+    overflow: hidden;
 }
 
 .about-img {
@@ -259,6 +263,30 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+}
+
+/* Initial hidden state */
+.animate-left,
+.animate-right {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+/* Left image comes from LEFT */
+.animate-left {
+    transform: translateX(-120px);
+}
+
+/* Right content comes from RIGHT */
+.animate-right {
+    transform: translateX(120px);
+}
+
+/* Visible state */
+.animate-left.show,
+.animate-right.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .about-content {
@@ -434,6 +462,22 @@
     font-family: "Montserrat";
 }
 
+/* Initial state */
+.scale-in {
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: center;
+    transition: transform 1.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+        opacity 0.8s ease;
+}
+
+/* Visible state */
+.scale-in.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
 /* Expertise End */
 
 /* Our service Start */
@@ -572,6 +616,7 @@
     background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%) !important;
     margin-top: 50px;
     padding-top: 80px;
+    overflow: hidden;
 }
 
 .Arcu-top h2 {
@@ -1102,6 +1147,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .form-left img {
@@ -1503,6 +1549,31 @@
     margin-right: 14px;
     font-size: 1.2rem;
 }
+/* Initial state: hidden and shifted left */
+.check-item {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* Visible state */
+.check-item.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Initial state: hidden and shifted left */
+.check-item-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* Visible state */
+.check-item.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 .licensed-writer-card-main {
     margin-top: 60px;
@@ -1553,6 +1624,7 @@
 .we-offer {
     background: linear-gradient(105.88deg, #338F9A 9.89%, #0C3467 89.9%);
     padding-top: 80px;
+    overflow: hidden;
 }
 
 .we-offer-header-heading h2 {
@@ -1615,6 +1687,33 @@
     height: 100%;
 }
 
+/* Left boxes slide in from left */
+.slide-left {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* Right boxes slide in from right */
+.slide-right {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+
+.slide-bottom {
+    opacity: 0;
+    transform: translateY(200px); /* start below */
+    /* transition: transform 1.1s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.8s ease; */
+    transition: all 1s ease-out;
+}
+
+/* Show state */
+.show {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
 /* We Offer Section End */
 /* Professional Writer Section Start */
 .professional-writer {
@@ -1702,14 +1801,30 @@
         transform: scale(1);
         opacity: 0.8;
     }
+
     50% {
         transform: scale(1.1);
         opacity: 1;
     }
+
     100% {
         transform: scale(1);
         opacity: 0.8;
     }
+}
+
+
+
+/* Slide-in for left boxes */
+.slide-item {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.slide-item.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 

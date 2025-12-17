@@ -80,3 +80,44 @@ var swiper = new Swiper(".mySwiper", {
           },
         }
 });
+
+
+// scroll animation
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Generic function to observe elements
+    function animateOnScroll(selector, classToAdd = "show", options = { threshold: 0.2 }, stagger = 0) {
+        const elements = document.querySelectorAll(selector);
+        if (!elements.length) return;
+
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (stagger > 0) {
+                        elements.forEach((el, index) => {
+                            setTimeout(() => el.classList.add(classToAdd), index * stagger);
+                        });
+                    } else {
+                        entry.target.classList.add(classToAdd);
+                    }
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        elements.forEach(el => observer.observe(el));
+    }
+
+    // Slide animations
+    animateOnScroll(".slide-left", "show", { threshold: 0.3 });
+    animateOnScroll(".slide-right", "show", { threshold: 0.3 });
+    animateOnScroll(".slide-bottom", "show", { threshold: 0.3 });
+
+    // Staggered check items
+    animateOnScroll(".check-item", "show", { threshold: 0.2 }, 500);
+    animateOnScroll(".check-item-right", "show", { threshold: 0.2 }, 500); // stagger from right
+
+    // Scale-in animation
+    animateOnScroll(".scale-in", "show", { threshold: 0.2 });
+
+});

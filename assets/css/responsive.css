@@ -225,7 +225,7 @@
         flex-direction: column-reverse;
     }
 
-  
+
 
     .professional-writter-left-data h3 {
         font-size: 1.2rem;
@@ -306,6 +306,13 @@
         font-size: 2rem;
     }
 
+    .scale-in {
+        transform: scale(0);
+    }
+
+    .scale-in.show {
+        transform: scale(1);
+    }
 
     .service-box h2 {
         font-size: 1rem;
@@ -858,14 +865,17 @@
     .we-offer-header-heading h2 {
         font-size: 1.8rem;
     }
-  .professional-writter-left .row {
+
+    .professional-writter-left .row {
         /* flex-direction: column; */
         text-align: center;
         /* padding: 6px 8px; */
     }
+
     .professional-writter-left .padding-remove {
         padding: 0 !important;
     }
+
     /* FICTION PAGE END */
 
 }
