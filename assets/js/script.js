@@ -24,7 +24,38 @@ closeSidebar.addEventListener("click", () => {
 });
 
 
+const servicesBtn = document.getElementById("servicesBtn");
+const servicesDropdown = document.getElementById("servicesDropdown");
+const genreBtn = document.getElementById("genreBtn");
+const genreDropdown = document.getElementById("genreDropdown");
 
+// SERVICES CLICK
+servicesBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    genreDropdown.classList.remove("show");
+    servicesDropdown.classList.toggle("show");
+});
+
+// GENRE CLICK
+genreBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    servicesDropdown.classList.remove("show");
+    genreDropdown.classList.toggle("show");
+});
+
+// CLICK OUTSIDE CLOSE
+document.addEventListener("click", () => {
+    servicesDropdown.classList.remove("show");
+    genreDropdown.classList.remove("show");
+});
+
+// PREVENT DROPDOWN CLICK FROM CLOSING
+servicesDropdown.addEventListener("click", e => e.stopPropagation());
+genreDropdown.addEventListener("click", e => e.stopPropagation());
 
 
 
@@ -82,26 +113,41 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+
+
+
 // scroll animation
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Generic function to observe elements
-    function animateOnScroll(selector, classToAdd = "show", options = { threshold: 0.2 }, stagger = 0) {
+    function animateOnScroll(
+        selector,
+        classToAdd = "show",
+        options = { threshold: 0.2 },
+        stagger = 0
+    ) {
         const elements = document.querySelectorAll(selector);
         if (!elements.length) return;
 
-        const observer = new IntersectionObserver((entries, obs) => {
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
+
                 if (entry.isIntersecting) {
                     if (stagger > 0) {
                         elements.forEach((el, index) => {
-                            setTimeout(() => el.classList.add(classToAdd), index * stagger);
+                            setTimeout(() => {
+                                if (el === entry.target) {
+                                    el.classList.add(classToAdd);
+                                }
+                            }, index * stagger);
                         });
                     } else {
                         entry.target.classList.add(classToAdd);
                     }
-                    obs.unobserve(entry.target);
+                } else {
+                    // 🔥 REMOVE when leaving viewport
+                    entry.target.classList.remove(classToAdd);
                 }
+
             });
         }, options);
 
@@ -113,11 +159,11 @@ document.addEventListener("DOMContentLoaded", () => {
     animateOnScroll(".slide-right", "show", { threshold: 0.3 });
     animateOnScroll(".slide-bottom", "show", { threshold: 0.3 });
 
-    // Staggered check items
-    animateOnScroll(".check-item", "show", { threshold: 0.2 }, 500);
-    animateOnScroll(".check-item-right", "show", { threshold: 0.2 }, 500); // stagger from right
+    // Staggered items
+    animateOnScroll(".check-item", "show", { threshold: 0.2 }, 150);
+    animateOnScroll(".check-item-right", "show", { threshold: 0.2 }, 150);
 
-    // Scale-in animation
+    // Scale animation
     animateOnScroll(".scale-in", "show", { threshold: 0.2 });
 
 });

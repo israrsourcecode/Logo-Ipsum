@@ -240,6 +240,45 @@
 
 @media(max-width: 767px) {
 
+    #servicesDropdown {
+        left: 45%;
+        top: 50%;
+        width: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transform-origin: center;
+    }
+
+    #servicesDropdown.show, #genreDropdown.show {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .services-grid, .genre-grid {
+        grid-template-columns: 1fr;
+        gap: 9px;
+    }
+
+
+    .services-grid a, .genre-grid a {
+        font-size: 0.9rem;
+        border-radius: 10px;
+        padding: 6px;
+    }
+
+    #servicesDropdown h4, #genreDropdown h4 {
+        margin-bottom: 9px;
+        font-size: 1.1rem;
+    }
+
+    #genreDropdown {
+        left: 45%;
+        top: 65%;
+        width: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transform-origin: center;
+    }
+
+
+
 
     .header-company {
         padding-left: 15px;
@@ -533,7 +572,19 @@
 }
 
 @media(max-width: 526px) {
-
+    #servicesDropdown {
+        left: 60%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.95);
+        width: 60%;
+    }
+    #genreDropdown  {
+        left: 60%;
+        top: 60%;
+        transform: translate(-50%, -50%) scale(0.95);
+        width: 60%;
+    }
+    
 
     .header-data h2 {
         text-align: center;

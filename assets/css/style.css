@@ -109,6 +109,110 @@
     display: none !important;
 }
 
+/* SERVICES DROPDOWN */
+#servicesDropdown {
+    position: fixed;
+   left: 144px; /* sidebar width + spacing */
+    top: 280px;
+    width: 420px;
+    background: #fbf7ed;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    z-index: 1000;
+
+    /* SCALE ANIMATION */
+    transform: scale(0);
+    transform-origin: top left;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: transform 0.35s ease, opacity 0.25s ease;
+}
+
+/* ACTIVE STATE */
+#servicesDropdown.show {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Buttons */
+.services-grid a {
+    text-align: center;
+    padding: 12px;
+    background: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #3A3A3A;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.services-grid a:hover {
+    background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%);
+    color: #fff;
+}
+
+
+
+/* GENRE DROPDOWN */
+#genreDropdown {
+    position: fixed;
+    left: 144px;
+    top: 350px; /* slightly below services */
+    width: 420px;
+    background: #fbf7ed;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    z-index: 1000;
+
+    transform: scale(0);
+    transform-origin: top left;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: transform 0.35s ease, opacity 0.25s ease;
+}
+
+#genreDropdown.show {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Grid */
+.genre-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.genre-grid a {
+    text-align: center;
+    padding: 12px;
+    background: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #3A3A3A;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.genre-grid a:hover {
+    background: linear-gradient(135deg, #338f9a 0%, #0c3467 100%);
+    color: #fff;
+}
+
+
 /* Close button inside sidebar */
 .close-btn {
     font-size: 24px;
